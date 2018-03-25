@@ -1,0 +1,8 @@
+*.code-workspace
+.idea
+node_modules/
+.env
+imgur_apiregistrationInfo.txt
+dist
+npm-debug.log
+.DS_Store
