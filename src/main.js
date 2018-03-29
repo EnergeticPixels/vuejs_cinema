@@ -5,6 +5,10 @@ import MovieList from './components/MovieList.vue';
 import MovieFilter from './components/MovieFilter.vue';
 
 import VueResource from 'vue-resource';
+import moment from 'moment-timezone';
+moment.tz.setDefault("UTC");
+// '$.....' is a developer convention to designate public api method. Same way with $http.
+Object.defineProperty(Vue.prototype, '$moment', { get() { return this.$root.moment } });  
 
 Vue.use(VueResource);
 
@@ -13,7 +17,8 @@ new Vue({
     data: {
         genre: [],
         time: [],
-        movies: []
+        movies: [],
+        moment
     },
     methods: {
         checkFilter(category, title, checked) {
