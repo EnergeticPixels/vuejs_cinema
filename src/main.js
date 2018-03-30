@@ -3,17 +3,23 @@ import './style.scss';
 
 import Overview from './components/Overview.vue';
 
+import VueRouter from 'vue-router';
+import routes from './util/routes';
+
 import VueResource from 'vue-resource';
 import moment from 'moment-timezone';
 moment.tz.setDefault("UTC");
 // '$.....' is a developer convention to designate public api method. Same way with $http.
 Object.defineProperty(Vue.prototype, '$moment', { get() { return this.$root.moment } });  
 
+Vue.use(VueRouter);
 Vue.use(VueResource);
 
 import { checkFilter } from './util/bus';
 const bus = new Vue();
 Object.defineProperty(Vue.prototype, '$bus', { get() { return this.$root.bus } });
+
+const router = new VueRouter({ routes });
 
 new Vue({
     el: '#app',
@@ -35,5 +41,7 @@ new Vue({
             }
         );
         this.$bus.$on('check-filter', checkFilter.bind(this));
-    }
+    },
+    router
+
 });
