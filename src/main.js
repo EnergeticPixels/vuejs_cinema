@@ -1,8 +1,6 @@
 import Vue from 'vue';
 import './style.scss';
 
-import Overview from './components/Overview.vue';
-
 import VueRouter from 'vue-router';
 import routes from './util/routes';
 
@@ -30,9 +28,6 @@ new Vue({
         moment,
         day: moment(),
         bus
-    },
-    components: {
-        Overview
     },
     created() {
         this.$http.get('/api').then(
