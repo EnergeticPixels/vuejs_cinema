@@ -1,8 +1,7 @@
 import Vue from 'vue';
 import './style.scss';
 
-import MovieList from './components/MovieList.vue';
-import MovieFilter from './components/MovieFilter.vue';
+import Overview from './components/Overview.vue';
 
 import VueResource from 'vue-resource';
 import moment from 'moment-timezone';
@@ -26,10 +25,8 @@ new Vue({
         day: moment(),
         bus
     },
-
     components: {
-        MovieList,
-        MovieFilter 
+        Overview
     },
     created() {
         this.$http.get('/api').then(
