@@ -1,19 +1,19 @@
 ### Cinema
 this is the result of a follow-along course from Udemy.com. 
-Project Overview/Setup    
-Setup Components   
-Filters    
-Refactoring with single file components            
-Getting data from API     
-Displaying session times  
-Component comms with event bus
-Creating the Detail Page
-Adding the day selector
-Adding tooltips
-Finishing touches       
-    Much more time needed to grasp concepts and methologies.
+Project Overview/Setup                       
+Setup Components                             20min
+Filters                                      38min
+Refactoring with single file components      13min      
+Getting data from API                        27min
+Displaying session times                     43min
+Component comms with event bus               11min
+Creating the Detail Page                     39min
+Adding the day selector                      22min
+Adding tooltips                              27min
+Finishing touches                            7min
+    Total video training time is a little over 4 hours 11 minutes.   Much more time needed to grasp concepts and methologies.
 
-This project is a little more advanced than the Poster Store project from the Udemy video training series.  More robust development of a SPA with VueJS.
+This project is a little more advanced than the Poster Store project from the Udemy video training series.  More robust development of a SPA with VueJS, such as single file components, custom events, filters, adding standard javascript libraries to Vue projects, handling project event bus, Vue-router, slots, application level properties, custom directives, vue plugins, keep-alive, and v-cloak.
 
 Mr. Gore has updated this course to combat OMBDB's API and data no longer being 'free'.  He has included some sample data to play with.
 
