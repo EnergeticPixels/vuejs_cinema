@@ -57,8 +57,9 @@ let mouseOutHandler = function(event) {
 Vue.directive('tooltip', {
     bind(el, bindings) {
         //console.log(el);
+        //console.log(bindings);
         let span = document.createElement('SPAN');
-        let text = document.createTextNode('Seats available: 200');
+        let text = document.createTextNode(`Seats available: ${bindings.value.seats}`);
         // adding classes to this can have cross-browser issues
         span.appendChild(text);
         addClass(span, 'tooltip');
