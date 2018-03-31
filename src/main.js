@@ -4,6 +4,9 @@ import './style.scss';
 import VueRouter from 'vue-router';
 import routes from './util/routes';
 
+import Tooltip from './util/tooltip';
+Vue.use(Tooltip);
+
 import VueResource from 'vue-resource';
 import moment from 'moment-timezone';
 moment.tz.setDefault("UTC");
